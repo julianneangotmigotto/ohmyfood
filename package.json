@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianneangotmigotto/ohmyfood.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Julianne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianneangotmigotto/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/julianneangotmigotto/ohmyfood#readme"
+}
