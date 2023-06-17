@@ -1,6 +1,173 @@
-body main .hero {
-  height: 600px;
-  background-color: red;
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 375px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+  width: 162px;
+  padding: 14px 105px 14px 108px;
+}
+
+/**** Section Location ****/
+.back-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #EAEAEA;
+  height: 50px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+.location h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/**** Section Explo ****/
+.explo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 287px;
+  background-color: #f7f7f7;
+}
+
+.explo h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 40px 20px 20px 20px;
+  padding-left: 42px;
+  padding-right: 58px;
+}
+
+.explo h4 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0px 20px 20px 20px;
+}
+
+/**** Section Fonctionnement ****/
+.Fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonctionnement_title {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+/**** RESTAURANTS ****/
+.Restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.title_restaurants {
+  padding-left: 20px;
+  padding-top: 54px;
+}
+
+.fa-regular {
+  padding-top: 23px;
+  padding-right: 25px;
+}
+
+/**** Footer ****/
+.footerstyle {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+}
+
+.logo_footer {
+  width: 137px;
+  color: #FFFFFF;
+}
+
+.customer_list,
+.legal_notice {
+  list-style-type: none;
+}
+
+.customer_list li,
+.legal_notice li {
+  color: #FFFFFF;
+}
+
+/** Button **/
+.submitebutton {
+  padding: 13px 18.75px;
+  border: 0px solid;
+  box-shadow: 0px 4px 10px;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #FF79DA -11.44%, #9356DC 123.93%);
+}
+
+.submitebutton_fonctionnement {
+  background: #f7f7f7;
+  border: 0px solid;
+  padding: 28px 38px;
+  margin: 12px;
+  border-radius: 20px;
+  min-width: 322px;
+}
+
+.texte_search {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.texte_searchfonction {
+  color: #000000;
+  padding-left: 23px;
+}
+
+/**** CARDS****/
+.card {
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin: 0px 15px 18px 14px;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 174px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card-content {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
