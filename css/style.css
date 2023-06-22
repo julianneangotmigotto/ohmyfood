@@ -28,6 +28,8 @@ header img {
   display: flex;
   flex-direction: row;
   gap: 17px;
+  justify-content: center;
+  align-items: center;
 }
 
 .location h3 {
@@ -66,6 +68,23 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.Fonctionnement .etape {
+  display: flex;
+  align-items: center;
+}
+.Fonctionnement .number {
+  display: flex;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  border: 0px solid #000000;
+  align-items: center;
+  justify-content: center;
+  margin-right: -30px;
+  z-index: 1;
+  background-color: #9356DC;
+  color: #FFFFFF;
 }
 
 .fonctionnement_title {
