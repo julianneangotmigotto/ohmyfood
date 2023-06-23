@@ -42,6 +42,7 @@ header img{
 .explo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex: 1;
     height: 287px;
@@ -51,8 +52,6 @@ header img{
             font-weight: 700;
             font-size: 24px;
             margin: 40px 20px 20px 20px;
-            padding-left: 42px;
-            padding-right: 58px;
         }
     
     .explo h4 {
@@ -61,7 +60,6 @@ header img{
             margin: 0px 20px 20px 20px;
         }
 }
-
 
 /**** Section Fonctionnement ****/
 
@@ -119,10 +117,19 @@ header img{
             padding-right: 25px;
      }
 }
+/* animation coeur card 
 
-/***buttontest
+@keyframes animationheart {
+    to {
+        color: $purple;
+    }
+}
+
+/***buttontest*
 
 .submitebutton{
+     width: 218px;
+     height: 50px;
      border: 0;
      background: transparent;
      color: $white;
@@ -136,7 +143,7 @@ header img{
      transition: all .2s;
 }
 
-.submitebutton::after {
+.submitebutton::before {
     content: "";
     width: 400px;
     height: 400px;
@@ -152,10 +159,11 @@ header img{
     transform: rotate(150deg);
 }
 
-.submitebutton:hover::{
+.submitebutton:hover{
     transform: translate(0,-6px);
 }
-***/
+**/
+
 .submitebutton {
     padding: 13px 18.75px;
     border: 0px solid;
@@ -192,6 +200,13 @@ header img{
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin: 0px 15px 18px 14px;
+}
+.card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
    
     .card img {
             object-fit: cover;
@@ -200,27 +215,13 @@ header img{
             border-radius: 15px 15px 0px 0px;
         }
     
-        .card-content {
-            padding-left: 15px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
         .card-title {
             font-size: 16px;
         }
-}
 
-/* animation coeur card */
-@keyframes animationheart{
-    from{
-        color: none;
-    }
 
-    to{
-        color: $purple;
-    }
-}
+
+
+
 
 
