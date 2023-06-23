@@ -41,23 +41,18 @@ header img {
 .explo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex: 1;
   height: 287px;
   background-color: #f7f7f7;
 }
-
-.explo h2 {
-  text-align: center;
+.explo .explo h2 {
   font-weight: 700;
   font-size: 24px;
   margin: 40px 20px 20px 20px;
-  padding-left: 42px;
-  padding-right: 58px;
 }
-
-.explo h4 {
-  text-align: center;
+.explo .explo h4 {
   font-weight: 300;
   font-size: 18px;
   margin: 0px 20px 20px 20px;
@@ -86,10 +81,12 @@ header img {
   background-color: #9356DC;
   color: #FFFFFF;
 }
-
-.fonctionnement_title {
+.Fonctionnement .fonctionnement_title {
   padding-left: 20px;
   padding-top: 10px;
+}
+.Fonctionnement .fa-solid fa-store {
+  color: #9356dc;
 }
 
 /**** RESTAURANTS ****/
@@ -99,40 +96,61 @@ header img {
   justify-content: center;
   background-color: #f7f7f7;
 }
-
-.title_restaurants {
+.Restaurants .title_restaurants {
   padding-left: 20px;
-  padding-top: 54px;
+  padding-top: 34px;
 }
-
-.fa-regular {
+.Restaurants .fa-regular {
   padding-top: 23px;
   padding-right: 25px;
 }
 
-/**** Footer ****/
-.footerstyle {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
+/* animation coeur card 
+
+@keyframes animationheart {
+    to {
+        color: $purple;
+    }
 }
 
-.logo_footer {
-  width: 137px;
-  color: #FFFFFF;
+/***buttontest*
+
+.submitebutton{
+     width: 218px;
+     height: 50px;
+     border: 0;
+     background: transparent;
+     color: $white;
+     position: relative;
+     overflow: hidden;
+     padding: 20px 50px;
+     border-radius: 25px;
+     box-shadow: 0px 4px 10px;
+     cursor: pointer;
+     font-size: 1.5em;
+     transition: all .2s;
 }
 
-.customer_list,
-.legal_notice {
-  list-style-type: none;
+.submitebutton::before {
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(250deg, $pink 50%, $purple 100%);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: all .5s;
 }
 
-.customer_list li,
-.legal_notice li {
-  color: #FFFFFF;
+.sumitebutton:hover::after{
+    transform: rotate(150deg);
 }
 
-/** Button **/
+.submitebutton:hover{
+    transform: translate(0,-6px);
+}
+**/
 .submitebutton {
   padding: 13px 18.75px;
   border: 0px solid;
@@ -171,13 +189,6 @@ header img {
   margin: 0px 15px 18px 14px;
 }
 
-.card img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 174px;
-  border-radius: 15px 15px 0px 0px;
-}
-
 .card-content {
   padding-left: 15px;
   display: flex;
@@ -185,8 +196,47 @@ header img {
   justify-content: space-between;
 }
 
+.card img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 174px;
+  border-radius: 15px 15px 0px 0px;
+}
+
 .card-title {
   font-size: 16px;
+}
+
+/**** Footer ****/
+.footerstyle {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+}
+.footerstyle .footer-list li {
+  color: #FFFFFF;
+  list-style-type: none;
+}
+.footerstyle .footer-list a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.footerstyle .footer-list i {
+  width: 12px;
+  height: 12px;
+  margin-right: 15px;
+}
+
+.second-list {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+footer img {
+  width: 139px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
