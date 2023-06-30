@@ -1,4 +1,8 @@
 /**** Footer ****/
+footer{
+    width: 100%;
+}
+
 
 .footerstyle {
     display: flex;
@@ -14,20 +18,51 @@
         text-decoration: none;
         color: $white;
         font-weight: 500;
+        font-size: 16px;
     }
     .footer-list i{
         width: 12px;
         height: 12px;
         margin-right: 15px;
     }
-}
-.second-list{
+
+.second-list a{
     font-weight: 400;
     font-size: 16px;
 }
+}
 
-footer img {
-width: 139px;
-padding-top: 20px;
-padding-left: 20px;
+.titlefooter {      
+    font-family: Shrikhand;        
+    font-size: 18px;       
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 25px;
+    padding-top: 11px;
+    color: $white;
+        }
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+.footerstyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 25px;
+    }
+
+    .footer-list a,
+    li,
+    ul,
+    i {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
 }

@@ -5,12 +5,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0px auto;
 }
 
-header img{
+header img {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 162px;
     padding: 14px 105px 14px 108px;
 }
@@ -26,11 +28,11 @@ header img{
 }
 
 .location {
- display: flex;
- flex-direction: row;
- gap: 17px;
- justify-content: center;
- align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
 }
 
 .location h3 {
@@ -44,36 +46,40 @@ header img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex: 1;
     height: 287px;
     background-color: $lightgrey2;
 
     .explo h2 {
-            font-weight: 700;
-            font-size: 24px;
-            margin: 40px 20px 20px 20px;
-        }
-    
+        font-weight: 700;
+        font-size: 24px;
+        margin: 40px 20px 20px 20px;
+    }
+
     .explo h4 {
-            font-weight: 300;
-            font-size: 18px;
-            margin: 0px 20px 20px 20px;
-        }
+        font-weight: 300;
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        margin: 0px 20px 20px 20px;
+    }
 }
 
 /**** Section Fonctionnement ****/
 
-.Fonctionnement{
+.Fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    .etape{
+    .etape {
         display: flex;
         align-items: center;
     }
-    
-    .number{
+
+    .number {
         display: flex;
         border-radius: 50%;
         height: 24px;
@@ -88,8 +94,8 @@ header img{
     }
 
     .fonctionnement_title {
-            padding-left: 20px;
-            padding-top: 10px;
+        padding-left: 20px;
+        padding-top: 10px;
     }
 
     .fa-solid fa-store {
@@ -101,75 +107,28 @@ header img{
 
 /**** RESTAURANTS ****/
 
-.Restaurants{
+.Restaurants {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: $lightgrey2;
 
     .title_restaurants {
-            padding-left: 20px;
-            padding-top: 34px;
-     }
-    
-    .fa-regular {
-            padding-top: 23px;
-            padding-right: 25px;
-     }
-}
-/* animation coeur card 
+        padding-left: 20px;
+        padding-top: 34px;
+        font-size: 24px;
+        font-weight: 700;
+    }
 
-@keyframes animationheart {
-    to {
-        color: $purple;
+    .fa-regular {
+        padding-top: 23px;
+        padding-right: 25px;
+        @include like
     }
 }
 
-/***buttontest*
-
-.submitebutton{
-     width: 218px;
-     height: 50px;
-     border: 0;
-     background: transparent;
-     color: $white;
-     position: relative;
-     overflow: hidden;
-     padding: 20px 50px;
-     border-radius: 25px;
-     box-shadow: 0px 4px 10px;
-     cursor: pointer;
-     font-size: 1.5em;
-     transition: all .2s;
-}
-
-.submitebutton::before {
-    content: "";
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(250deg, $pink 50%, $purple 100%);
-    position: absolute;
-    top: -50px;
-    left: -100px;
-    z-index: -1;
-    transition: all .5s;
-}
-
-.sumitebutton:hover::after{
-    transform: rotate(150deg);
-}
-
-.submitebutton:hover{
-    transform: translate(0,-6px);
-}
-**/
-
 .submitebutton {
-    padding: 13px 18.75px;
-    border: 0px solid;
-    box-shadow: 0px 4px 10px;
-    border-radius: 25px;
-    background: linear-gradient(193.33deg, $pink -11.44%, $purple 123.93%);
+    @include button-purple;
 }
 
 .submitebutton_fonctionnement {
@@ -190,7 +149,11 @@ header img{
 .texte_searchfonction {
     color: $black;
     padding-left: 23px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
 }
+
 /**** CARDS****/
 
 .card {
@@ -201,27 +164,95 @@ header img{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin: 0px 15px 18px 14px;
 }
+
 .card-content {
     padding-left: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 174px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width:1025px) {
+
+    body {
+    max-width: 1440px;
+}
+
+header img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/***fonctionnement***/
+
+.Fonctionnement {
+    gap: 30px;
+}
+
+/****explo****/
+
+.explo h2 {
+padding-bottom: 18px;
     }
-   
-    .card img {
-            object-fit: cover;
-            width: 100%;
-            max-height: 174px;
-            border-radius: 15px 15px 0px 0px;
-        }
     
-        .card-title {
-            font-size: 16px;
+.explo h4 {
+padding-bottom: 18px;
         }
 
+.Fonctionnement {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 180px 25px 180px;
+}
 
+.fonctionnement_title {
+    padding-left: 180px;
+    padding-top: 50px;
+}
+ /**** restaurant ****/
 
+ .Restaurants {
+  padding-left: 180px;
+ }
 
+ .title_restaurants {
+    padding-bottom: 30px;
+ }
 
+.restaurants-card {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.card {
+    min-width: 490;
+}
+
+.card img {
+    max-height: 235px;
+}
+
+.card-content {
+    padding-left: 15px;
+    min-width: 490px;
+}
+
+}
 
 
