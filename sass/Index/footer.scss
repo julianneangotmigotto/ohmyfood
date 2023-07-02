@@ -1,13 +1,19 @@
 /**** Footer ****/
-footer{
-    width: 100%;
-}
-
 
 .footerstyle {
     display: flex;
     flex-direction: column;
     background-color: $darkgrey;
+
+    .titlefooter {
+            font-family: Shrikhand;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            padding-left: 25px;
+            padding-top: 11px;
+            color: $white;
+        }
 
     .footer-list li {
             color: $white;
@@ -32,26 +38,28 @@ footer{
 }
 }
 
-.titlefooter {      
-    font-family: Shrikhand;        
-    font-size: 18px;       
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 25px;
-    padding-top: 11px;
-    color: $white;
-        }
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width:1025px) {
 
+footer {
+    width: 100%;
+}
 .footerstyle {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
 
+        .titlefooter {
+              order: 2;
+              margin-bottom: 40px;
+              margin-right: 30px;
+            }
+
     .footer-list {
+        order: 1;
         display: flex;
         flex-direction: row;
         padding: 30px 25px;
@@ -65,4 +73,5 @@ footer{
         flex-direction: row;
         gap: 7px;
     }
+}
 }
