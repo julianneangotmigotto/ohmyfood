@@ -1,4 +1,3 @@
-/****animation loader ****/
 #spiner {
   min-height: 100vh;
   width: 100%;
@@ -6,15 +5,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
-  animation: fade 1s 2s forwards;
+  align-items: center;
+  animation: fade 1s 3s forwards;
   opacity: 1;
 }
-
-.loader {
+#spiner .loader {
   width: 150px;
   /* control the size */
   aspect-ratio: 1;
@@ -23,15 +21,10 @@
   mask: conic-gradient(from 22deg, rgba(0, 0, 0, 0.2), #000);
   animation: load 1s steps(8) infinite;
 }
-
-.loader,
-.loader:before {
-  --_g: linear-gradient(#c10fee 0 0) 50%;
+#spiner .loader:before {
+  --_g: linear-gradient(#17177c 0 0) 50%;
   /* update the color here */
   background: var(--_g)/34% 8% space no-repeat, var(--_g)/8% 34% no-repeat space;
-}
-
-.loader:before {
   content: "";
   transform: rotate(45deg);
 }
@@ -47,10 +40,10 @@
 @keyframes fade {
   from {
     opacity: 1;
-    transform: scale(0);
   }
   to {
     opacity: 0;
+    transform: scale(0);
   }
 }
 body {
@@ -64,13 +57,22 @@ body {
   margin: 0px auto;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 /****HEADER****/
-header img {
+.header_content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 162px;
+  flex-wrap: wrap;
+}
+.header_content .ohmyfoodlogo img {
+  max-width: 162px;
   padding: 14px 105px 14px 108px;
+}
+.header_content .back i {
+  margin-left: 50px;
 }
 
 /**** Section Location ****/
@@ -258,13 +260,58 @@ header img {
   font-size: 16px;
 }
 
+/**** resto ****/
+.back i {
+  width: 30px;
+  height: 30px;
+}
+
+.imgheadermenu img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 375px;
+  max-height: 275px;
+}
+
+.section_menu {
+  background-color: #f7f7f7;
+  position: relative;
+  top: -70px;
+  min-width: 375px;
+  border-radius: 40px 40px 0px 0px;
+}
+.section_menu h2 {
+  padding-top: 31px;
+  padding-left: 17px;
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
+.section_menu h3 {
+  padding-left: 17px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.ENTREES_CARDS {
+  display: flex;
+  flex-direction: column;
+}
+.ENTREES_CARDS h4 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 1025px) {
   body {
     max-width: 1440px;
   }
-  header img {
+  .ohmyfoodlogo img {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -314,6 +361,10 @@ header img {
   }
 }
 /**** Footer ****/
+footer {
+  width: 100%;
+}
+
 .footerstyle {
   display: flex;
   flex-direction: column;

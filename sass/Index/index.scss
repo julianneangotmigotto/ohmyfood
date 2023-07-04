@@ -9,13 +9,25 @@ body {
     margin: 0px auto;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 /****HEADER****/
-header img {
+.header_content{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 162px;
+    flex-wrap: wrap;
+
+    .ohmyfoodlogo img{
+    max-width: 162px;
     padding: 14px 105px 14px 108px;
+    }
+
+    .back i{
+        margin-left: 50px;
+    }
+
 }
 
 /**** Section Location ****/
@@ -183,6 +195,58 @@ header img {
 .card-title {
     font-size: 16px;
 }
+/**** resto ****/
+
+.header_content{
+
+}
+
+.back i{
+    width: 30px;
+    height: 30px;
+}
+
+.imgheadermenu img{
+display: flex;
+justify-content: center;
+align-items:center ;
+max-width: 375px;
+max-height: 275px;
+}
+
+.section_menu {
+    background-color: $lightgrey2;
+    position: relative;
+    top: -70px;
+    min-width: 375px;
+    border-radius: 40px 40px 0px 0px;
+
+    h2 {
+            padding-top: 31px;
+            padding-left: 17px;
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+    h3 {
+            padding-left: 17px;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 300;
+        }
+}
+
+.ENTREES_CARDS{
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -192,7 +256,7 @@ header img {
     max-width: 1440px;
 }
 
-header img {
+.ohmyfoodlogo img {
     padding-top: 30px;
     padding-bottom: 30px;
 }
