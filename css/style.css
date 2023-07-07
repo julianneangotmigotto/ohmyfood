@@ -274,6 +274,10 @@ a {
   max-height: 275px;
 }
 
+.underline {
+  text-decoration: 4px underline #99E2D0;
+}
+
 .section_menu {
   background-color: #f7f7f7;
   position: relative;
@@ -295,14 +299,28 @@ a {
   font-weight: 300;
 }
 
-.ENTREES_CARDS {
+.resto_cards {
   display: flex;
   flex-direction: column;
 }
-.ENTREES_CARDS h4 {
+.resto_cards .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.resto_cards h4 {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: -10px;
+}
+.buttonrestopages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /****** Media queries ***********/

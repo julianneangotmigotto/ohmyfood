@@ -29,12 +29,19 @@
   </head>
   <body>
     <header>
-      <div class="ohmyfoodlogo">
-        <a class="logo" href="./">
-          <img src="../Images/images/logo/ohmyfood.png" alt="logo Ohmyfood" />
-        </a>
-      </div>
-      <div>
+      <section class="header_content">
+        <div class="ohmyfoodlogo">
+          <a class="logo" href="./">
+            <img src="../Images/images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+          </a>
+        </div>
+        <div class="back">
+          <a href="../index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+      </section>
+      <div class="imgheadermenu">
         <img
           src="../Images/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
           alt="Image d'une table avec une assiette dréssée"
@@ -43,34 +50,38 @@
     </header>
     <main>
       <section class="section_menu">
-        <h2>Le délice des sens</h2>
-        <i class="fa-regular fa-heart fa-1x nomclasse"></i>
+        <div class="titleandheart">
+          <h2>À la française</h2>
+          <i class="fa-regular fa-heart fa-1x nomclasse"></i>
+        </div>
         <div class="ENTREES">
-          <h3>ENTRÉES</h3>
-          <div class="ENTREES_CARDS">
+          <u class="underline">
+            <h3>ENTRÉES</h3>
+          </u>
+          <div class="resto_cards">
             <article class="card">
               <div class="card-content">
-                <div class="card-txt">
-                  <h3 class="card-title">Tartare de thon</h3>
-                  <p class="card-subtitle">Assaisonné au yuzu</p>
+                <div>
+                  <h4>Tartare de thon</h4>
+                  <p>Assaisonné au yuzu</p>
                   <p class="card-price">25<span class="euro">€</span></p>
                 </div>
               </div>
             </article>
             <article class="card">
               <div class="card-content">
-                <div class="card-txt">
-                  <h3 class="card-title">Bouchée de homard croustillant</h3>
-                  <p class="card-subtitle">Et sa farandole de petits légumes</p>
+                <div>
+                  <h4>Bouchée de homard croustillant</h3>
+                  <p>Et sa farandole de petits légumes</p>
                   <p class="card-price">35<span class="euro">€</span></p>
                 </div>
               </div>
             </article>
             <article class="card">
               <div class="card-content">
-                <div class="card-txt">
-                  <h3 class="card-title">Poulet rôti aux herbes de Provence</h3>
-                  <p class="card-subtitle">et sa crème de truffe</p>
+                <div>
+                  <h4>Poulet rôti aux herbes de Provence</h4>
+                  <p>et sa crème de truffe</p>
                   <p class="card-price">40<span class="euro">€</span></p>
                 </div>
               </div>
@@ -78,8 +89,10 @@
           </div>
         </div>
         <div class="PLATS">
-          <h2>PLATS</h2>
-          <div class="PLATS_CARDS">
+          <u class="underline">
+            <h3>PLATS</h3>
+          </u>
+            <div class="resto_cards">
             <article class="card">
               <div class="card-content">
                 <div class="card-txt">

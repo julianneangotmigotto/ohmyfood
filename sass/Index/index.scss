@@ -214,6 +214,10 @@ max-width: 375px;
 max-height: 275px;
 }
 
+.underline {
+    text-decoration: 4px underline $blueline;
+}
+
 .section_menu {
     background-color: $lightgrey2;
     position: relative;
@@ -235,17 +239,39 @@ max-height: 275px;
             font-size: 16px;
             font-weight: 300;
         }
+
 }
 
-.ENTREES_CARDS{
+.resto_cards{
     display: flex;
     flex-direction: column;
+
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
 
     h4 {
         font-family: Roboto;
         font-size: 18px;
         font-weight: 500;
+        margin-bottom: -10px;
     }
+
+    .card-price{
+
+    }
+
+}
+
+.buttonrestopages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /****** Media queries ***********/
