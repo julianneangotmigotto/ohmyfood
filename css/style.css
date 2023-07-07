@@ -53,7 +53,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 0px auto;
 }
 
@@ -260,74 +259,12 @@ a {
   font-size: 16px;
 }
 
-/**** resto ****/
-.back i {
-  width: 30px;
-  height: 30px;
-}
-
-.imgheadermenu img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 375px;
-  max-height: 275px;
-}
-
-.underline {
-  text-decoration: 4px underline #99E2D0;
-}
-
-.section_menu {
-  background-color: #f7f7f7;
-  position: relative;
-  top: -70px;
-  min-width: 375px;
-  border-radius: 40px 40px 0px 0px;
-}
-.section_menu h2 {
-  padding-top: 31px;
-  padding-left: 17px;
-  font-family: Shrikhand;
-  font-size: 28px;
-  font-weight: 400;
-}
-.section_menu h3 {
-  padding-left: 17px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.resto_cards {
-  display: flex;
-  flex-direction: column;
-}
-.resto_cards .card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.resto_cards h4 {
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: -10px;
-}
-.buttonrestopages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 1025px) {
   body {
     max-width: 1440px;
+    align-items: center;
   }
   .ohmyfoodlogo img {
     padding-top: 30px;
@@ -448,6 +385,68 @@ footer {
     flex-direction: row;
     gap: 7px;
   }
+}
+/**** resto ****/
+.back i {
+  width: 30px;
+  height: 30px;
+}
+
+.imgheadermenu img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 375px;
+  max-height: 275px;
+}
+
+.underline {
+  text-decoration: 4px underline #99E2D0;
+}
+
+.section_menu {
+  background-color: #f7f7f7;
+  position: relative;
+  top: -70px;
+  min-width: 375px;
+  border-radius: 40px 40px 0px 0px;
+}
+.section_menu h2 {
+  padding-top: 31px;
+  padding-left: 17px;
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
+.section_menu h3 {
+  padding-left: 17px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.resto_cards {
+  display: flex;
+  flex-direction: column;
+}
+.resto_cards .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.resto_cards h4 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+.buttonrestopages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
