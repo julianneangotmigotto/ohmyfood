@@ -1,0 +1,35 @@
+/****HEADER****/
+.header_content {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 50px;
+
+    .ohmyfoodlogo img {
+        max-width: 162px;
+        padding: 14px 0px 14px 62px;
+    }
+
+    .back i {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        padding-top: 20px;
+    }
+}
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width:1025px) {
+    .ohmyfoodlogo img {
+            max-width: 200px;
+            padding: 0px 0px 0px 0px;
+        }
+    
+        .back i {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            padding-top: 20px;
+        }
+    
+}

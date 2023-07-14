@@ -35,6 +35,7 @@
 
 @mixin like {
     cursor: pointer;
+    font-size: 22px;
 
     &:hover {
         transition: color .5s;
@@ -45,4 +46,3 @@
         @include gradient-purple-to-pink;
     }
 }
-

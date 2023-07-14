@@ -13,21 +13,7 @@ a {
     color: #000;
 }
 
-/****HEADER****/
-.header_content{
-    display: flex;
-    flex-wrap: wrap;
 
-    .ohmyfoodlogo img{
-    max-width: 162px;
-    padding: 14px 105px 14px 108px;
-    }
-
-    .back i{
-        margin-left: 50px;
-    }
-
-}
 
 /**** Section Location ****/
 .back-location {
@@ -200,73 +186,72 @@ a {
 @media (min-width:1025px) {
 
     body {
-    max-width: 1440px;
-    align-items: center;
+        max-width: 1440px;
+        align-items: center;
 
-}
-
-.ohmyfoodlogo img {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-/***fonctionnement***/
-
-.Fonctionnement {
-    gap: 30px;
-}
-
-/****explo****/
-
-.explo h2 {
-padding-bottom: 18px;
     }
-    
-.explo h4 {
-padding-bottom: 18px;
-        }
 
-.Fonctionnement {
-    display: flex;
-    flex-direction: row;
-    padding: 0px 180px 25px 180px;
+    .ohmyfoodlogo img {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /***fonctionnement***/
+
+    .Fonctionnement {
+        gap: 30px;
+    }
+
+    /****explo****/
+
+    .explo h2 {
+        padding-bottom: 18px;
+    }
+
+    .explo h4 {
+        padding-bottom: 18px;
+    }
+
+    .Fonctionnement {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 180px 25px 180px;
+    }
+
+    .fonctionnement_title {
+        padding-left: 180px;
+        padding-top: 50px;
+    }
+
+    /**** restaurant ****/
+
+    .Restaurants {
+        padding-left: 180px;
+    }
+
+    .title_restaurants {
+        padding-bottom: 30px;
+    }
+
+    .restaurants-card {
+        display: flex;
+        flex-direction: row;
+        margin-right: 50px;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    .card {
+        min-width: 490;
+    }
+
+    .card img {
+        max-height: 235px;
+    }
+
+    .card-content {
+        padding-left: 15px;
+        min-width: 490px;
+    }
+
 }
-
-.fonctionnement_title {
-    padding-left: 180px;
-    padding-top: 50px;
-}
- /**** restaurant ****/
-
- .Restaurants {
-  padding-left: 180px;
- }
-
- .title_restaurants {
-    padding-bottom: 30px;
- }
-
-.restaurants-card {
-    display: flex;
-    flex-direction: row;
-    margin-right: 50px;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-}
-
-.card {
-    min-width: 490;
-}
-
-.card img {
-    max-height: 235px;
-}
-
-.card-content {
-    padding-left: 15px;
-    min-width: 490px;
-}
-
-}
-
-
