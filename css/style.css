@@ -328,7 +328,7 @@ a {
     padding-bottom: 30px;
   }
   .card {
-    min-width: 490;
+    min-width: 490px;
   }
   .card img {
     max-height: 235px;
@@ -475,6 +475,7 @@ header .image-restaurant {
 .section_menu .menu .resto_cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .section_menu .menu .resto_cards .card-content {
   display: flex;
@@ -518,6 +519,22 @@ header .image-restaurant {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.select button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 59px;
+  height: 69px;
+  border-radius: 0px 15px 15px 0px;
+  border: 0px transparent;
+  cursor: pointer;
+}
+
+.fa-circle-check {
+  color: #FFFFFF;
 }
 
 /****** Media queries ***********/
