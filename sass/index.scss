@@ -12,7 +12,14 @@ a {
     text-decoration: none;
     color: #000;
 }
-
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-weight: 700;
+}
 
 
 /**** Section Location ****/
@@ -71,6 +78,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
     .etape {
         display: flex;
@@ -189,6 +198,10 @@ a {
         align-items: center;
 
     }
+
+        h1 {
+            font-size: 40px;
+        }
 
     .ohmyfoodlogo img {
         padding-top: 30px;
