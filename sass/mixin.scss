@@ -46,3 +46,9 @@
         @include gradient-purple-to-pink;
     }
 }
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

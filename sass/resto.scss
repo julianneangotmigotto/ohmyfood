@@ -66,25 +66,72 @@ header {
             flex-direction: column;
             justify-content: center;
 
-            .card-content {
+            .card {
+                height: 69px;
                 display: flex;
-                flex-direction: column;
                 justify-content: space-between;
-                box-sizing: border-box;
-                padding-right: 15px;
+                @include ellipsis;
 
-                div {
+                .card-content {
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
+                    box-sizing: border-box;
+                    padding-right: 15px;
+                    width: 100%;
+                    @include ellipsis;
+                    padding-top: 12px;
+                    padding-bottom: 10px;
+
+                    h4 {
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin: 0;
+                        @include ellipsis;
+                    }
+
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            margin: 0;
+                            @include ellipsis;
+                        }
+
+                        .card-price {
+                            width: 30px;
+                            font-weight: 700;
+                        }
+                    }
+
                 }
 
-            }
+                .tick {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $blueline;
+                    width: 59px;
+                    border-radius: 0px 15px 15px 0px;
+                    border: 0px transparent;
+                    cursor: pointer;
+                    margin-right: -60px;
+                    transition: all .4s linear;
 
-            h4 {
-                font-family: Roboto;
-                font-size: 18px;
-                font-weight: 500;
-                margin-bottom: -10px;
+                    .fa-circle-check {
+                        color: $white;
+                        font-size: 21px;
+                    }
+                }
+
+                &:hover {
+
+                    .tick {
+                        margin-right: 0;
+                    }
+                }
             }
 
 
@@ -126,25 +173,7 @@ header {
     }
 
 }
-.select button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $blueline;
-    width: 59px;
-    height: 69px;
-    border-radius: 0px 15px 15px 0px;
-    border: 0px transparent;
-    cursor: pointer;
-    opacity: 0;
-}
-        button:hover {
-            transition: opacity 2s;
-            opacity: 1;
-        }
-.fa-circle-check{
-    color: $white;
-}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width:1055px) {

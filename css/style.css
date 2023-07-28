@@ -259,7 +259,6 @@ a {
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin: 0px 15px 18px 14px;
 }
@@ -477,22 +476,68 @@ header .image-restaurant {
   flex-direction: column;
   justify-content: center;
 }
-.section_menu .menu .resto_cards .card-content {
+.section_menu .menu .resto_cards .card {
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section_menu .menu .resto_cards .card .card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   padding-right: 15px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
-.section_menu .menu .resto_cards .card-content div {
-  display: flex;
-  justify-content: space-between;
-}
-.section_menu .menu .resto_cards h4 {
+.section_menu .menu .resto_cards .card .card-content h4 {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: -10px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section_menu .menu .resto_cards .card .card-content div {
+  display: flex;
+  justify-content: space-between;
+}
+.section_menu .menu .resto_cards .card .card-content div p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section_menu .menu .resto_cards .card .card-content div .card-price {
+  width: 30px;
+  font-weight: 700;
+}
+.section_menu .menu .resto_cards .card .tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 59px;
+  border-radius: 0px 15px 15px 0px;
+  border: 0px transparent;
+  cursor: pointer;
+  margin-right: -60px;
+  transition: all 0.4s linear;
+}
+.section_menu .menu .resto_cards .card .tick .fa-circle-check {
+  color: #FFFFFF;
+  font-size: 21px;
+}
+.section_menu .menu .resto_cards .card:hover .tick {
+  margin-right: 0;
 }
 .section_menu .buttonrestopages {
   display: flex;
@@ -519,28 +564,6 @@ header .image-restaurant {
     opacity: 1;
     transform: translateY(0px);
   }
-}
-
-.select button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 59px;
-  height: 69px;
-  border-radius: 0px 15px 15px 0px;
-  border: 0px transparent;
-  cursor: pointer;
-  opacity: 0;
-}
-
-button:hover {
-  transition: opacity 2s;
-  opacity: 1;
-}
-
-.fa-circle-check {
-  color: #FFFFFF;
 }
 
 /****** Media queries ***********/
