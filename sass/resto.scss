@@ -13,10 +13,6 @@ header {
     }
 }
 
-.underline {
-    text-decoration: 4px underline $blueline;
-}
-
 .section_menu {
     background-color: $lightgrey2;
     position: relative;
@@ -55,10 +51,24 @@ header {
         animation: fadeIn 0.5s both;
 
         h3 {
-            padding-left: 17px;
-            font-family: Roboto;
-            font-size: 16px;
+            text-transform: uppercase;
+            padding-bottom: 6px;
             font-weight: 300;
+            font-size: 16px;
+            line-height: 18.75px;
+            width: 90%;
+            margin-top: 40px;
+        }
+
+        hr {
+            color: $blueline;
+            background-color: $blueline;
+            border-width: 0;
+            width: 40px;
+            margin-left: 0%;
+            margin-top: -15px;
+            height: 3px;
+            margin-bottom: 20px;
         }
 
         .resto_cards {
@@ -70,6 +80,12 @@ header {
                 height: 69px;
                 display: flex;
                 justify-content: space-between;
+                background-color: $white;
+                cursor: pointer;
+                box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+                border-radius: 15.0431px;
+                margin-bottom: 12px;
+                padding-left: 12px;
                 @include ellipsis;
 
                 .card-content {
@@ -101,7 +117,7 @@ header {
                         }
 
                         .card-price {
-                            width: 30px;
+                            min-width: 30px;
                             font-weight: 700;
                         }
                     }
@@ -138,14 +154,16 @@ header {
         }
     }
 
-
-
     .buttonrestopages {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-top: 40px;
         padding-bottom: 40px;
+
+        .submitebutton {
+            @include button-purple;
+        }
     }
 
     .cascade-delay-1 {

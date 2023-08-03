@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    // max-width: 375px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,6 +11,7 @@ a {
     text-decoration: none;
     color: #000;
 }
+
 h1 {
     display: flex;
     justify-content: center;
@@ -30,19 +30,23 @@ h1 {
     background-color: $grey2;
     height: 50px;
 
-}
+    .location {
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        justify-content: center;
+        align-items: center;
 
-.location {
-    display: flex;
-    flex-direction: row;
-    gap: 17px;
-    justify-content: center;
-    align-items: center;
-}
+        i {
+            color: $darkgrey;
+        }
 
-.location h3 {
-    font-weight: 500;
-    font-size: 16px;
+        h2 {
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
 }
 
 /**** Section Explo ****/
@@ -56,75 +60,148 @@ h1 {
     height: 287px;
     background-color: $lightgrey2;
 
-    .explo h2 {
+    h2 {
         font-weight: 700;
         font-size: 24px;
         margin: 40px 20px 20px 20px;
     }
 
-    .explo h4 {
+    p {
         font-weight: 300;
         font-size: 18px;
         font-style: normal;
         line-height: normal;
         margin: 0px 20px 20px 20px;
     }
+
+    .submitebutton {
+        @include button-purple;
+
+        .texte_search {
+            color: $white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
 }
 
 /**** Section Fonctionnement ****/
 
-.Fonctionnement {
+.fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    .etape {
-        display: flex;
-        align-items: center;
-    }
-
-    .number {
-        display: flex;
-        border-radius: 50%;
-        height: 24px;
-        width: 24px;
-        border: 0px solid $black;
-        align-items: center;
-        justify-content: center;
-        margin-right: -30px;
-        z-index: 1;
-        background-color: $purple;
-        color: $white;
-    }
+    padding-bottom: 30px;
 
     .fonctionnement_title {
-        padding-left: 20px;
-        padding-top: 10px;
+        padding-left: 3%;
+        width: 97%;
     }
 
-    .fa-solid fa-store {
-        color: $foncpurple;
+    .fonctionnement-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        .etape {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .number {
+            display: flex;
+            border-radius: 50%;
+            height: 24px;
+            width: 24px;
+            border: 0px solid $black;
+            align-items: center;
+            justify-content: center;
+            margin-right: -30px;
+            z-index: 1;
+            background-color: $purple;
+            color: $white;
+        }
+
+
+
+        .submitebutton_fonctionnement {
+            cursor: pointer;
+            width: 100%;
+            background: $lightgrey2;
+            border: 0px solid;
+            padding: 28px 38px;
+            margin: 12px;
+            border-radius: 20px;
+            min-width: 290px;
+
+            .fa-solid {
+                color: $grey3;
+                font-size: 18px;
+            }
+
+            .texte_searchfonction {
+                color: $black;
+                padding-left: 23px;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            &:hover {
+                .fa-solid {
+                    color: $foncpurple;
+                }
+            }
+        }
     }
+
 }
 
 
 
 /**** RESTAURANTS ****/
 
-.Restaurants {
+.restaurants {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: $lightgrey2;
 
     .title_restaurants {
-        padding-left: 20px;
+        padding-left: 3%;
         padding-top: 34px;
         font-size: 24px;
         font-weight: 700;
+    }
+
+    /**** CARDS****/
+    .card {
+        background-color: white;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        margin: 0px 15px 18px 14px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 174px;
+        }
+
+        .card-content {
+            padding-left: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .card-title {
+                font-size: 16px;
+            }
+        }
     }
 
     .fa-regular {
@@ -134,63 +211,8 @@ h1 {
     }
 }
 
-.submitebutton {
-    @include button-purple;
-}
-
-.submitebutton_fonctionnement {
-    background: $lightgrey2;
-    border: 0px solid;
-    padding: 28px 38px;
-    margin: 12px;
-    border-radius: 20px;
-    min-width: 322px;
-}
-
-.texte_search {
-    color: $white;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.texte_searchfonction {
-    color: $black;
-    padding-left: 23px;
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-}
-
-/**** CARDS****/
-
-.card {
-    background-color: white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin: 0px 15px 18px 14px;
-}
-
-.card-content {
-    padding-left: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.card img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 174px;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets and desktops above 1024px) */
 @media (min-width:1025px) {
 
     body {
@@ -199,71 +221,53 @@ h1 {
 
     }
 
-        h1 {
-            font-size: 40px;
+    h1 {
+        font-size: 40px;
+    }
+
+    .explo {
+
+        h2 {
+            padding-bottom: 18px;
         }
 
-    .ohmyfoodlogo img {
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
 
-    /***fonctionnement***/
-
-    .Fonctionnement {
-        gap: 30px;
+    .fonctionnement {
+        .fonctionnement-buttons {
+            flex-direction: row;
+            gap: 3%;
+            justify-content: center;
+        }
     }
 
-    /****explo****/
+    .restaurants {
+        .title_restaurants {
+            padding-bottom: 30px;
+        }
 
-    .explo h2 {
-        padding-bottom: 18px;
-    }
+        .restaurants-card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+            justify-content: center;
 
-    .explo h4 {
-        padding-bottom: 18px;
-    }
+            .card {
+                min-width: 490px;
 
-    .Fonctionnement {
-        display: flex;
-        flex-direction: row;
-        padding: 0px 180px 25px 180px;
-    }
+                img {
+                    max-height: 235px;
+                }
 
-    .fonctionnement_title {
-        padding-left: 180px;
-        padding-top: 50px;
-    }
+                .card-content {
+                    padding-left: 15px;
+                    min-width: 490px;
+                }
+            }
 
-    /**** restaurant ****/
+        }
 
-    .Restaurants {
-        padding-left: 180px;
-    }
-
-    .title_restaurants {
-        padding-bottom: 30px;
-    }
-
-    .restaurants-card {
-        display: flex;
-        flex-direction: row;
-        margin-right: 50px;
-        flex-wrap: wrap;
-        padding-bottom: 30px;
-    }
-
-    .card {
-        min-width: 490px;
-    }
-
-    .card img {
-        max-height: 235px;
-    }
-
-    .card-content {
-        padding-left: 15px;
-        min-width: 490px;
     }
 
 }

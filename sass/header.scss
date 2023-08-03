@@ -1,30 +1,35 @@
 /****HEADER****/
-.header_content {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    padding-left: 50px;
+header {
+    .header_content {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding-left: 50px;
 
-    .ohmyfoodlogo img {
-        max-width: 162px;
-        padding: 14px 0px 14px 0px;
-    }
+        .ohmyfoodlogo {
 
-    .back {
-        position: absolute;
-        left: 50px;
+            img {
+                max-width: 162px;
+                padding: 14px 0px 14px 0px;
+            }
+        }
 
-        i {
-            width: 30px;
-            height: 30px;
+        .back {
             position: absolute;
-            padding-top: 20px;
+            left: 50px;
+
+            i {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                padding-top: 20px;
+            }
         }
     }
 }
 
+
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width:1025px) {
     .ohmyfoodlogo img {
         max-width: 200px;
