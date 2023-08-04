@@ -1,55 +1,45 @@
-#spiner {
-    min-height: 100vh;
-    width: 100%;
-    z-index: 2;
+div.spinner {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fade 1s 3s forwards;
-    opacity: 1;
+    background: $grey2;
+    z-index: 2;
+    transition: opacity 1s, visibility 5s;
+    animation: loading-bg 1s 3s forwards;
 
-    .loader {
-        width: 150px;
-        /* control the size */
-        aspect-ratio: 1;
-        display: grid;
-        -webkit-mask: conic-gradient(from 22deg, #0003, #000);
-        mask: conic-gradient(from 22deg, #0003, #000);
-        animation: load 1s steps(8) infinite;
+    &::after {
+        content: "";
+        width: 75px;
+        height: 75px;
+        border: 15px solid $white;
+        border-top-color: $purple;
+        border-radius: 50%;
+        animation: loading 0.5s linear infinite;
+    }
 
-        &:before {
-            --_g: linear-gradient(#17177c 0 0) 50%;
-            /* update the color here */
-            background:
-                var(--_g)/34% 8% space no-repeat,
-                var(--_g)/8% 34% no-repeat space;
-            content: "";
-            transform: rotate(45deg);
+    @keyframes loading {
+        from {
+            transform: rotate(0turn)
+        }
+
+        to {
+            transform: rotate(1turn)
         }
     }
-}
 
-@keyframes load {
-    from {
-        transform: rotate(0turn)
-    }
+    @keyframes loading-bg {
+        from {
+            opacity: 1;
+        }
 
-    to {
-        transform: rotate(1turn)
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(0);
+        to {
+            opacity: 0;
+            transform: scale(0);
+        }
     }
 }
